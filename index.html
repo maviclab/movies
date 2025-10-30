@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CineStream</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamFlix</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- NAVBAR -->
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">Sanju<span>Stream</span></div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Movies</a></li>
-        <li><a href="#">Series</a></li>
-        <li><a href="#">My List</a></li>
-      </ul>
+    <div class="logo">STREAMFLIX</div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
     </nav>
+    <div class="search">
+      <input type="text" placeholder="Search" id="search-box" />
+      <button id="search-btn">🔍</button>
+    </div>
   </header>
 
-  <!-- HERO -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Watch. Enjoy. Repeat.</h1>
-      <p>The ultimate place for your favorite movies & series.</p>
-      <button class="btn">Explore Now</button>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Inception</h1>
+      <p>
+        A thief who steals corporate secrets through dream-sharing technology
+        gets one final mission.
+      </p>
+      <div class="buttons">
+        <button class="btn play">▶ Play</button>
+        <button class="btn info">ℹ More Info</button>
+      </div>
     </div>
   </section>
 
-  <!-- MOVIE SLIDER -->
-  <section class="slider-section">
-    <h2>🔥 Trending Movies</h2>
-    <div class="slider-container" id="slider">
-      <!-- Posters injected by JS -->
-    </div>
-
-    <!-- Slider controls -->
-    <div class="slider-controls">
-      <button class="control prev" id="prevBtn">&#10094;</button>
-      <button class="control next" id="nextBtn">&#10095;</button>
+  <!-- Movie Section -->
+  <section class="row">
+    <h2>Popular on StreamFlix</h2>
+    <div class="movie-row">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" alt="Inception" />
+      <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="Avengers: Endgame" />
+      <img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Interstellar" />
+      <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="Joker" />
+      <img src="https://image.tmdb.org/t/p/w500/4zLfBbGnuUBLbMVtagTZvzFwS8l.jpg" alt="Oppenheimer" />
+      <img src="https://cdna.artstation.com/p/assets/images/images/031/645/214/large/shreyas-raut-avatar-2.jpg?1604210989" alt="Avatar" />
+      <img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="Spider-Man No Way Home" />
     </div>
   </section>
+
+  <section class="row">
+    <h2>Trending Now</h2>
+    <div class="movie-row">
+      <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Wonder Woman" />
+      <img src="https://image.tmdb.org/t/p/w500/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg" alt="Doctor Strange" />
+      <img src="https://images-cdn.ubuy.co.in/67922689dc83901f27567c6e-the-batman-movie-poster-profile-blue.jpg" alt="The Batman" />
+      <img src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" alt="Black Panther" />
+      <img src="https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Dune" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 StreamFlix. Inspired by Netflix UI. All Rights Reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
