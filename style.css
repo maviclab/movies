@@ -1,0 +1,157 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #0c0c0c 0%, #000 100%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #e50914;
+}
+
+.logo span {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e50914;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), #000),
+              url('https://static0.dualshockersimages.com/wordpress/wp-content/uploads/2025/09/avatar-frontiers-of-pandora-from-the-ashes-dlc-banner.jpg?w=1600&h=900&fit=crop') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 60px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #e50914;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #f40612;
+}
+
+/* SLIDER SECTION */
+.slider-section {
+  position: relative;
+  margin-top: -50px;
+  padding: 60px 0 100px 0;
+  background: linear-gradient(180deg, #000 0%, #0c0c0c 100%);
+  overflow: hidden;
+}
+
+.slider-section h2 {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+/* SLIDER CONTAINER */
+.slider-container {
+  display: flex;
+  gap: 25px;
+  padding-left: 60px;
+  transition: transform 0.6s ease;
+}
+
+.poster {
+  width: 220px;
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transform: perspective(800px) rotateY(0deg);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.poster:hover {
+  transform: perspective(800px) rotateY(-10deg) scale(1.08);
+  box-shadow: 0 10px 40px rgba(229, 9, 20, 0.4);
+}
+
+/* SLIDER CONTROLS */
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.control {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+.control:hover {
+  background:
